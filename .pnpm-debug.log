@@ -1,0 +1,22 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "spoiler-block@0.0.0",
+    "stage": "build",
+    "script": "vue-tsc --noEmit && vite build",
+    "pkgname": "spoiler-block",
+    "err": {
+      "name": "pnpm",
+      "message": "spoiler-block@0.0.0 build: `vue-tsc --noEmit && vite build`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: spoiler-block@0.0.0 build: `vue-tsc --noEmit && vite build`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/usr/local/pnpm-global/5/node_modules/.pnpm/pnpm@6.23.6/node_modules/pnpm/dist/pnpm.cjs:91462:22)\n    at ChildProcess.emit (node:events:390:28)\n    at maybeClose (node:internal/child_process:1064:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)"
+    }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}
