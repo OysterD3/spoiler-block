@@ -8,12 +8,15 @@
     "build-watch": "vue-tsc --noEmit && vite build --watch"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "uuid": "^8.3.2",
     "vue": "^3.2.25"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "@types/chrome": "^0.0.171",
     "@types/node": "^16.11.13",
+    "@types/uuid": "^8.3.3",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "@vitejs/plugin-vue": "^2.0.0",
@@ -50,7 +53,13 @@
     "rules": {
       "prettier/prettier": "error",
       "arrow-body-style": "off",
-      "prefer-arrow-callback": "off"
+      "prefer-arrow-callback": "off",
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ]
     },
     "overrides": [
       {
