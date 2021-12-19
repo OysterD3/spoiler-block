@@ -1,0 +1,8 @@
+.spoiler-block__spoiler {
+  /*border: 1px solid #bfbfbf !important;*/
+  /*color: black !important;*/
+  /*padding: 2px 4px;*/
+  /*text-decoration: none;*/
+  /*cursor: pointer;*/
+  filter: blur(3px);
+}

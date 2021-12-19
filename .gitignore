@@ -1,6 +1,9 @@
 node_modules
 .DS_Store
-dist
 dist-ssr
 *.local
+dist/*
+!dist/scripts/
+!dist/manifest.json
+!dist/style.css
 .env

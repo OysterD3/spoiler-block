@@ -1,0 +1,32 @@
+{
+  "name": "Spoiler Block",
+  "description": "Say no to spoiler!!!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "asdf"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "permissions": [
+    "declarativeContent",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions":[
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["scripts/content.js"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
