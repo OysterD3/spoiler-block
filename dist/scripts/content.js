@@ -69,14 +69,15 @@ const matchTerm = (node, term) => {
 const findContainersWithTextInside = (targetNode) => {
   const containerNodes = targetNode.querySelectorAll(EL_CONTAINER);
   const emptyNodes = [];
-  for (const containerNode of containerNodes) {
-    const containerChildren = containerNode.childNodes;
-    for (const containerChild of containerChildren) {
-      if (containerChild.textContent) {
-        emptyNodes.push(containerChild.parentNode);
+
+  containerNodes.forEach((p) => {
+    p.childNodes.forEach((c) => {
+      if (c.textContent) {
+        emptyNodes.push(c.parentNode);
       }
-    }
-  }
+    });
+  });
+
   return emptyNodes;
 };
 
