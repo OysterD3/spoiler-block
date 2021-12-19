@@ -6,4 +6,5 @@ dist/*
 !dist/scripts/
 !dist/manifest.json
 !dist/style.css
+!dist/logo.png
 .env
