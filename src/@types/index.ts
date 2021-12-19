@@ -1,7 +1,6 @@
 export type Option = {
+  id: string;
   term: string;
-  keywords: string[];
-  imageUrl: string;
   startAt?: string;
   endAt?: string;
   createdAt: string;
