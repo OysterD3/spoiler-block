@@ -11,8 +11,6 @@
     "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "permissions": [
-    "declarativeContent",
-    "activeTab",
     "storage"
   ],
   "content_scripts": [
